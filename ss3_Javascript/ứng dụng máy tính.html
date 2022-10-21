@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<tr>
+    <td><input type="text" id="in1"></td>
+    <td><input type="text" id="in2"></td>
+    <td></td>
+    <td></td>
+</tr>
+<br>
+<br>
+<tr>
+    <td><button type="button" onclick="plus()">Addition(+)</button></td>
+    <td><button type="button" onclick="minus()">Subtraction(-)</button></td>
+    <td><button type="button" onclick="multiply()">Multiplication(x)</button></td>
+    <td><button type="button" onclick="divide()">Division((/)</button></td>
+</tr>
+<br>
+<br>
+<label>Result: <span id="out"></span></label>
+<script>
+    function plus() {
+        var num1 = +document.getElementById("in1").value;
+        var num2 = +document.getElementById("in2").value;
+        var result = num1+num2;
+        document.getElementById("out").innerText = result;
+    }
+    function minus() {
+        var num1 = +document.getElementById("in1").value;
+        var num2 = +document.getElementById("in2").value;
+        var result = num1-num2;
+        document.getElementById("out").innerText = result;
+    }
+    function multiply() {
+        var num1 = +document.getElementById("in1").value;
+        var num2 = +document.getElementById("in2").value;
+        var result = num1*num2;
+        document.getElementById("out").innerText = result;
+    }function divide() {
+        var num1 = +document.getElementById("in1").value;
+        var num2 = +document.getElementById("in2").value;
+        var result = num1/num2;
+        document.getElementById("out").innerText = result;
+    }
+</script>
+</body>
+</html>
