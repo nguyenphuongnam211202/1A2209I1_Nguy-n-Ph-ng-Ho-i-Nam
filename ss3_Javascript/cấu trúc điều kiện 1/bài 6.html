@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoa hồng</title>
+</head>
+<body>
+<script>
+    var a = +prompt("nhập giá trị tổng doanh số bán hàng (VNĐ)");
+    if(a>= 300000000){
+        var b = 20*a/100;
+        alert("hoa hồng nhận được là 20% doanh số: " + b + " VNĐ");
+    }
+    else {
+        if(a>100000000){
+            var b = 10*a/100;
+            alert("hoa hồng nhận được là 10% doanh số: " + b + " VNĐ");
+        }
+        else {
+            var b= 5*a/100;
+            alert("hoa hồng nhận được là 5% doanh số: " + b +" VNĐ")
+        }
+    }
+</script>
+</body>
+</html>

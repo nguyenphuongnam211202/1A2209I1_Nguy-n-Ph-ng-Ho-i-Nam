@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cước điện thoại</title>
+</head>
+<body>
+<!--phí định kì là 25.000đ
+600đ cho 50 phút gọi đầu tiên
+400đ cho 150 phút gọi tiếp theo
+200đ cho bất kì phút gọi nào sau 200 phút đầu tiên-->
+<script>
+    var minutes = +prompt("nhập vào số phút gọi trong tháng")
+    if(minutes>200){
+        var bill = (minutes-200)*200 + 150*400 + 50*600;
+    }
+    else{
+        if(minutes>50) {
+            var bill = (minutes - 50) * 400 + 50 * 600;
+        }
+        else {
+            var bill = minutes*600;
+        }
+    }
+    let sumBill = bill + 25000;
+    alert("cước phí điện thoại là :" + sumBill);
+</script>
+</body>
+</html>

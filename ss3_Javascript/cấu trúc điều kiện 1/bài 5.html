@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    var point1 = +prompt("nhập điểm kiểm tra 1 tiết");
+    var point2 = +prompt("nhập điểm thi giữa kì");
+    var point3 = +prompt("nhập điểm cuối kì")
+    var average = (point1 + point2*2 + point3*3)/6 ;
+    //phân loại
+    if (average >= 75){
+        alert("loại A")
+    }
+    else {
+        if( average>=60){
+            alert("loại B")
+        }
+        else {
+            if(average>=45){
+                alert("loại C")
+            }
+            else {
+                if(average>=35){
+                    alert("loại D")
+                }
+                else {
+                    alert("loại E")
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
