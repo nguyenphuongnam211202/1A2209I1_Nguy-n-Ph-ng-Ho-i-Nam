@@ -7,14 +7,17 @@
 <body>
 <script>
     var a = +prompt( "nhập vào một số nguyên");
-    if ( a > 0 ) {
-        alert( a + " lớn hơn 0");
-    }
-    else if ( a == 0){
-        alert( a + " là số 0");
+    if(!isNaN(a)) {
+        if (a > 0) {
+            alert(a + " lớn hơn 0");
+        } else if (a == 0) {
+            alert(a + " là số 0");
+        } else {
+            alert(a + " bé hơn 0");
+        }
     }
     else {
-        alert( a + " bé hơn 0");
+        alert("vui lòng nhập lại")
     }
 </script>
 </body>

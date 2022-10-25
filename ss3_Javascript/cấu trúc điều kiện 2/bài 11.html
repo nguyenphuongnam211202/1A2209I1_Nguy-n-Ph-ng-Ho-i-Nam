@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<!--1. 4 triệu đồng/tháng 0%;
+2. Trên 4 - 6 triệu đồng/tháng: 5%;
+3. Trên 6 - 9 triệu đồng: 10%;
+4. Trên 9 - 14 triệu đồng/tháng: 15%;
+5. trên 14 - 24 triệu đồng/tháng: 20%;
+6. Trên 24 - 44 triệu đồng/tháng: 25%;
+7. Trên 44 - 84 triệu đồng/tháng: 30%;
+8. Trên 84 triệu đồng: 35%.-->
+<script>
+    var salary = +prompt("nhập thu nhập của bạn/tháng (VNĐ)");
+    if(!isNaN(salary) && salary>0){
+        if(salary>84000000){
+            var tax = 0.35*salary;
+        }
+        else {
+            if(salary>44000000){
+                var tax = 0.30*salary;
+            }
+            else {
+                if(salary>24000000){
+                    var tax = 0.25*salary;
+                }
+                else {
+                    if(salary>14000000){
+                        var tax= 0.2*salary;
+                    }
+                    else {
+                        if (salary>9000000){
+                            var tax=0.15*salary;
+                        }
+                        else {
+                            if(salary>6000000){
+                                var tax= 0.1*salary;
+                            }
+                            else {
+                                if(salary>4000000){
+                                    var tax = 0.05*salary ;
+                                }
+                                else {
+                                    var tax = "không cần đóng thuế"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    else {
+        alert("vui lòng nhập lại chính xác thông tin")
+    }
+    alert(tax)
+</script>
+</body>
+</html>

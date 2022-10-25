@@ -7,11 +7,15 @@
 <body>
 <script>
     var a = +prompt("nhập tuổi vào đây");
-    if (a >= 15){
-        alert("đủ tuổi vào lớp 10");
+    if(!isNaN(a) && a>0 && a<120) {
+        if (a >= 15) {
+            alert("đủ tuổi vào lớp 10");
+        } else {
+            alert("không đủ tuổi vào lớp 10");
+        }
     }
-    else {
-        alert("không đủ tuổi vào lớp 10");
+    else{
+        alert("vui lòng nhập lại")
     }
 
 </script>

@@ -9,14 +9,19 @@
     var weight = +prompt("nhập vào cân nặng");
     var height = +prompt("nhập vào chiều cao");
     var bmi = weight / ( height *height);
-    if (bmi < 18)
-        document.write("Underweight");
-    else if (bmi < 25.0)
-        document.write("Normal");
-    else if (bmi < 30.0)
-        document.write("Overweight");
-    else
-        document.write("Obese");
+    if (!isNaN(weight) && !isNaN(height) && weight>0 && height>0) {
+        if (bmi < 18)
+            alert("Underweight");
+        else if (bmi < 25.0)
+            alert("Normal");
+        else if (bmi < 30.0)
+            alert("Overweight");
+        else
+            alert("Obese");
+    }
+    else {
+        alert("vui lòng nhập lại")
+    }
 
 </script>
 </body>

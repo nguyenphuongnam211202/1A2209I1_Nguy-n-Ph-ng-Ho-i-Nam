@@ -11,26 +11,27 @@
     var point3 = +prompt("nhập điểm cuối kì")
     var average = (point1 + point2*2 + point3*3)/6 ;
     //phân loại
-    if (average >= 75){
-        alert("loại A")
+    if ( !isNaN(point1) && !isNaN(point2) && !isNaN(point3) && point1>=0 && point2>=0 && point3>=0) {
+        if (average >= 75) {
+            alert("loại A")
+        } else {
+            if (average >= 60) {
+                alert("loại B")
+            } else {
+                if (average >= 45) {
+                    alert("loại C")
+                } else {
+                    if (average >= 35) {
+                        alert("loại D")
+                    } else {
+                        alert("loại E")
+                    }
+                }
+            }
+        }
     }
     else {
-        if( average>=60){
-            alert("loại B")
-        }
-        else {
-            if(average>=45){
-                alert("loại C")
-            }
-            else {
-                if(average>=35){
-                    alert("loại D")
-                }
-                else {
-                    alert("loại E")
-                }
-            }
-        }
+        alert("vui lòng nhập lại");
     }
 
 </script>

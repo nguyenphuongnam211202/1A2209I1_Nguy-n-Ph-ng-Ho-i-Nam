@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giá điện</title>
+</head>
+<body>
+<!--tiền điện phải trả biết các thức tính tiền như sau:
+1. 100Kwh định mức đầu tiên có đơn giá trung bình là 600 đ/kwh
+2. các kwh từ 101 -  150 có đơn giá là 700 đ/kwh
+3. các kwh từ 151 - 200 có đơn giá là 900 đ/kwh
+4. các kwh từ 201 trở đi có đơn giá là 1100 đ/kwh-->
+</body>
+<script>
+    var kWh= +prompt("nhập vào số kWh dùng trong tháng");
+    if (!isNaN(kWh) && kWh > 0 ){
+        if(kWh>200){
+            var bill = (kWh - 200)*1100 + 50*900 + 50*700 + 100*600 ;
+        }
+        else {
+            if(kWh>150){
+                var bill = (kWh-150)*900 + 50*700 + 100*600;
+            }
+            else {
+                if(kWh>100){
+                    var bill = (kWh - 100)*700 + 100*600;
+                }
+                else {
+                    var bill= kWh*600;
+                }
+            }
+        }
+    }
+    else {
+        alert("vui lòng nhập lại")
+    }
+    alert("tiền điện phải trả là :" + bill + " VNĐ")
+</script>
+</html>

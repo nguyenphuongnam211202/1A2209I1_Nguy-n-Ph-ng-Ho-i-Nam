@@ -7,19 +7,22 @@
 <body>
 <script>
     var a = +prompt("nhập giá trị tổng doanh số bán hàng (VNĐ)");
-    if(a>= 300000000){
-        var b = 20*a/100;
-        alert("hoa hồng nhận được là 20% doanh số: " + b + " VNĐ");
+    if(!isNaN(a) && a>=0) {
+        if (a >= 300000000) {
+            var b = 20 * a / 100;
+            alert("hoa hồng nhận được là 20% doanh số: " + b + " VNĐ");
+        } else {
+            if (a > 100000000) {
+                var b = 10 * a / 100;
+                alert("hoa hồng nhận được là 10% doanh số: " + b + " VNĐ");
+            } else {
+                var b = 5 * a / 100;
+                alert("hoa hồng nhận được là 5% doanh số: " + b + " VNĐ")
+            }
+        }
     }
-    else {
-        if(a>100000000){
-            var b = 10*a/100;
-            alert("hoa hồng nhận được là 10% doanh số: " + b + " VNĐ");
-        }
-        else {
-            var b= 5*a/100;
-            alert("hoa hồng nhận được là 5% doanh số: " + b +" VNĐ")
-        }
+    else{
+        alert("vui lòng nhập lại");
     }
 </script>
 </body>

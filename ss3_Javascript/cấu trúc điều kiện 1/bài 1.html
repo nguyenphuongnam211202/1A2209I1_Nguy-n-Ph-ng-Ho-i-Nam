@@ -8,12 +8,15 @@
 <script>
         let a = +prompt("nhập vào số a");
         let b = +prompt("nhập vào số b");
-        if(a % b == 0) {
-            document.write( "a chia hết cho b");
+        if(!isNaN(a) && !isNaN(b)) {
+            if (a % b == 0) {
+                alert("a chia hết cho b");
+            } else {
+                alert("a không chia hết cho b");
+            }
         }
-        else
-        {
-            document.write("a không chia hết cho b");
+        else {
+            alert("vui lòng nhập lại")
         }
 
 </script>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích tam giác vuông</title>
+</head>
+<body>
+<script>
+    var a = +prompt("nhập vào cạnh thứ nhất");
+    var b = +prompt("nhập vào cạnh thứ hai");
+    if(!isNaN(a) && !isNaN(b) && a >0 && b>0) {
+        let area = a*b/2 ;
+        alert("diện tích tam giác vuông có cạnh " + a + " và cạnh " + b + " là: " + area)
+    }
+    else {
+        alert("vui lòng nhập lại")
+    }
+ </script>
+</body>
+</html>
