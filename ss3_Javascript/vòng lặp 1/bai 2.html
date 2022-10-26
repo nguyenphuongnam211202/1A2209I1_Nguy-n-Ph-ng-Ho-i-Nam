@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhietdo</title>
+</head>
+<body>
+<script>
+    var i;
+    do {
+        i = +prompt("nhập vào nhiệt độ")
+        if (i > 100) {
+            alert("giảm nhiệt độ")
+        } else if (i < 20) {
+            alert("tăng nhiệt độ")
+        } else {
+            alert("OK")
+        }
+
+    } while (i < 20 || i > 100);
+</script>
+</body>
+</html>
