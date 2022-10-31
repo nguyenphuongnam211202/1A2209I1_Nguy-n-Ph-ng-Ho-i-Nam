@@ -10,11 +10,16 @@
         month = +prompt("nhập số tháng gửi"),
         profit = 0,
         sumMoney = firstMoney;
-    for (var i = 1; i <= month; i++) {
-        profit = sumMoney * 0.12;
-        sumMoney = firstMoney + profit;
+    if(!isNaN(firstMoney) && !isNaN(month) && firstMoney>0 && month >0) {
+        for (var i = 1; i <= month; i++) {
+            profit = sumMoney * 0.12;
+            sumMoney = firstMoney + profit;
+        }
+        document.write("tiền lãi là:", sumMoney)
     }
-    document.write("tiền lãi là:", sumMoney)
+    else {
+        alert("vui lòng nhập lại")
+    }
 </script>
 </body>
 </html>
