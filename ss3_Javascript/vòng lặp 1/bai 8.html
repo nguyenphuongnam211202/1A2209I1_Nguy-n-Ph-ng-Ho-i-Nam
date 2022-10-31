@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy thử đoán xem</title>
+</head>
+<body>
+<input type="button" onclick="Play()" value="Chơi">
+<script>
+    alert("nhập vào khoảng muốn đoán (số bắt đầu - số kết thúc)");
+    var begin = +prompt("số bắt đầu");
+    var end = +prompt("số kết thúc");
+    if (!isNaN(begin) && !isNaN(end) && end > begin) {
+        let numberRandom = Math.floor((Math.random() * (end - begin + 1)) + begin);
+        function Play() {
+            for (var i = 1; i <= 3; i++) {
+                var numberGuess = +prompt("nhập vào số bạn muốn đoán")
+                if (numberGuess === numberRandom) {
+                    alert("chúc mừng bạn đã đoán đúng")
+                    break;
+                } else if (numberGuess > numberRandom) {
+                    alert("số bạn đã đoán lớn hơn số đúng, mời bạn đoán lại")
+                } else {
+                    alert("số bạn đã đoán bé hơn, mời bạn đoán lại")
+                }
+            }
+        }
+    } else {
+        alert("vui lòng nhập chính xác")
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    var firstMoney = +prompt("nhập số tiền gửi ban đầu"),
+        month = +prompt("nhập số tháng gửi"),
+        profit = 0,
+        sumMoney = firstMoney;
+    for (var i = 1; i <= month; i++) {
+        profit = sumMoney * 0.12;
+        sumMoney = firstMoney + profit;
+    }
+    document.write("tiền lãi là:", sumMoney)
+</script>
+</body>
+</html>

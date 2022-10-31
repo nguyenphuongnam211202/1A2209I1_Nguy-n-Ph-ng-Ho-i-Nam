@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> so dau tien chia het cho 5 day fibonacci</title>
+</head>
+<body>
+<script>
+    document.write(" số đầu tiên của dãy fibonacci chia hết cho 5 là: <br>")
+    let num1 = 1, num2 = 1, next;
+    for(let i = 1; ; i++) {
+        if(num1%5===0){
+            document.write(num1)
+            break;
+        }
+        next = num1 + num2;
+        num1 = num2;
+        num2 = next;
+    }
+</script>
+</body>
+</html>

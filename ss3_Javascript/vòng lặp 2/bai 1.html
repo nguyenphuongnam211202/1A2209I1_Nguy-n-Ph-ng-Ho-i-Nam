@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    var n = +prompt("nhập N số muốn hiển thị của dãy fibonacci"),
+        count = 1;
+    while (count <= n) {
+        document.write(n, " số đầu tiên của dãy fibonacci là: <br>")
+        let num1 = 1, num2 = 1, next;
+        for (let i = 1; i <= n; i++) {
+            document.write(num1, "<br>");
+            next = num1 + num2;
+            num1 = num2;
+            num2 = next;
+            count++
+        }
+
+    }
+</script>
+</body>
+</html>
