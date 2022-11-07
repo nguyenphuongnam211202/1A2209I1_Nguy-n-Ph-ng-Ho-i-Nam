@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    var num = window.prompt();
+    var result = [num[0]];
+
+    for (var i = 1; i < num.length; i++) {
+        if (num[i - 1] % 2 === 0 && num[i] % 2 === 0) {
+            result.push('-', num[i]);
+        } else {
+            result.push(num[i]);
+        }
+    }
+    document.write(result.join(''));
+
+</script>
+</body>
+</html>

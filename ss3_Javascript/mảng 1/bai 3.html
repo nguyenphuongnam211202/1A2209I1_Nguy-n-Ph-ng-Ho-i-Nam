@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    var num = +prompt("nhập kích thước của mảng"),
+        arr = [],
+        sum = 0;
+    for (let i = 0; i < num; i++) {
+        arr[i]=+prompt("nhập phần tử của mảng");
+        sum = sum + arr[i];
+    }
+    let average = sum/arr.length
+    document.write("giá trị trung bình của các phần tử trong mảng là: ",average)
+
+</script>
+</body>
+</html>

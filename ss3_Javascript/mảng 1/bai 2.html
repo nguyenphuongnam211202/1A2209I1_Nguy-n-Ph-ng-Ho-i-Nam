@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    for (let i = 0; i < 10; i++) {
+        arr[i]= +prompt("nhập số nguyên khác nhau")
+    }
+    var max= arr[0],
+        index= 0;
+    for (let j = 1; j < arr.length ; j++) {
+        if (arr[j] > max){
+           max = arr[j]
+           index= j;
+        }
+    }
+    document.write("số lớn nhất là : ",max," ở vị trí thứ ",index," của mảng")
+</script>
+</body>
+</html>

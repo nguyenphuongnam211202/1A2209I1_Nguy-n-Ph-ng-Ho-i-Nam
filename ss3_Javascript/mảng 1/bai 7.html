@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    for (let i = 0; i < 10; i++) {
+        arr[i]= +prompt("nhập số nguyên")
+    }
+    let v = +prompt("nhập số nguyên V")
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === v) {
+                arr.splice(arr.indexOf(v), 1);
+                arr.push(0)
+            }
+        }
+    document.write(arr)
+</script>
+</body>
+</html>

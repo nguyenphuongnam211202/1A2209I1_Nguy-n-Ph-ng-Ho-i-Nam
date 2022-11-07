@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    var num = +prompt("nhập kích thước của mảng"),
+        arr = [],
+        count = 0;
+    for (let i = 0; i < num; i++){
+        arr[i] = prompt("nhập phần tử của mảng");
+        if(!isNaN(arr[i])){
+            count++
+        }
+    }
+    document.write("số kí tự số của mảng là ",count)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    var num = +prompt("nhập kích thước của chuỗi"),
+        arr = [],
+        count = 0;
+    for (let i = 0; i < num; i++){
+        arr[i] = +prompt("nhập các số trong chuỗi");
+        if (arr[i]<0){
+            count++
+        }
+    }
+    document.write("số nguyên âm trong chuỗi là: ",count," số")
+</script>
+</body>
+</html>
