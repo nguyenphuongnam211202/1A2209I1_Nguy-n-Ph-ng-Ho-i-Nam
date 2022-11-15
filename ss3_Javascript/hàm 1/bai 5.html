@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let star = prompt("nhập vào tên của ngồi sao");
+    let stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair" , "Dubhe", "Regulus"];
+    let Constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function findStar(star) {
+            if (stars.indexOf(star) !== -1) {
+                alert(star + " thuộc chòm sao " + Constellations[stars.indexOf(star)])
+            } else {
+                alert("underfind")
+            }
+    }
+    findStar(star)
+</script>
+</body>
+</html>

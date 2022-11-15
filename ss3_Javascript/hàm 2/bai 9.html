@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    function findChar(arr, char) {
+        var count = 0;
+        if (arr.indexOf(char) !== -1) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === char) {
+                    count++
+                }
+            }
+        } else {
+            count = -1
+        }
+        return count;
+    }
+
+    let n = +prompt("nhập vào độ dài mảng ");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("nhập phần tử của mảng")
+    }
+    let char = prompt("nhập kí tự ");
+    document.write(findChar(arr, char))
+</script>
+</body>
+</html>

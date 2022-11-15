@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doi cho 2 so</title>
+</head>
+<body>
+<script>
+     let arr = []
+         arr[0]=+prompt("nhập phần tử thứ nhất")
+         arr[1]=+prompt("nhập phần tử thứ hai")
+
+    function swap(arr) {
+        let temp = arr[0];
+        arr[0] = arr[1];
+       arr[1] = temp;
+     }
+     swap(arr);
+     document.write('số thứ nhất là : ' + arr[0] +"<br>" +'số thứ hai là : ' + arr[1] );
+</script>
+</body>
+</html>
