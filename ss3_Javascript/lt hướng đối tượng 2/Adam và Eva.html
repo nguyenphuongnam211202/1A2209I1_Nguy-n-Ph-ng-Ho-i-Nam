@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam and Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight
+        }
+
+        getApple() {
+            return this.weight
+        }
+
+        isEmpty() {
+            if (this.weight > 0) {
+                return true;
+            } else {
+                return false
+            }
+        }
+
+        decrease() {
+            if (this.isEmpty() === true) {
+                return this.weight--
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight,) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        setGender(value) {
+            this.gender = value
+        }
+
+        checkApple(apple) {
+            if (apple.isEmpty() === true) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        say(value) {
+            this.str = value;
+            return this.str
+        }
+
+        eat(apple) {
+            if (this.checkApple() === true) {
+                apple.decrease()
+            }
+        }
+
+        getName() {
+            return this.name
+        }
+
+        setName(value) {
+            this.name = value
+        }
+
+        getWeight() {
+            return this.weight
+        }
+
+        raiseWeight() {
+            return this.weight++
+        }
+    }
+
+    var apple = new Apple(10);
+    var adam = new Human("Adam", "male", 70);
+    var eva = new Human("Eva", "female", 45);
+    if(adam.checkApple(apple)=== true){
+        for (let i = 0; i < 10; i++) {
+            if(i%2!==0){
+                document.write(adam.say("my turn"));
+                document.write(adam.raiseWeight());
+                document.write(apple.)
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

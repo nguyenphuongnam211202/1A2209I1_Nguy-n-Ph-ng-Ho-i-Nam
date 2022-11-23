@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC = doC;
+        }
+        changedoF(){
+            return 1.8*this.doC + 32;
+        }
+        changeKenvin(){
+            return this.doC +273;
+        }
+        setTem(value){
+            this.doC = value
+        }
+    }
+    let temperature = new Temperature(10);
+    document.write(temperature.changedoF() + "<br>");
+    document.write(temperature.changeKenvin() + "<br>");
+    temperature.setTem(20);
+    document.write(temperature.changedoF() + "<br>");
+    document.write(temperature.changeKenvin() + "<br>");
+</script>
+</body>
+</html>
