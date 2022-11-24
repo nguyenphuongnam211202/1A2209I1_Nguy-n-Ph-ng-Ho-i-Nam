@@ -6,26 +6,46 @@
 </head>
 <body>
 <script>
-class Rectangle{
-    constructor(length,width) {
-        this.lenght = length;
-        this.width = width;
+    class Rectangle {
+        constructor(length, width) {
+            this.lenght = length;
+            this.width = width;
+        }
+
+        getLength() {
+            return this.lenght
+        }
+
+        getWidth() {
+            return this.width
+        }
+
+        setLenght(length) {
+            this.lenght = length;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        area() {
+            return this.lenght * this.width;
+        }
+
+        perimeter() {
+            return (this.width + this.lenght) * 2;
+        }
     }
-    area(){
-        return this.lenght*this.width;
-    }
-    perimeter(){
-        return (this.width + this.lenght)*2;
-    }
-    setLenght(length){
-        this.lenght = length;
-    }
-    setWidth(width){
-        this.width = width;
-    }
-}
- let lenght = +prompt("nhập chiều dài vào đây"),
-     width = +prompt("nhập chiều rộng vào đây");
+
+    var rectagle = new Rectangle (30, 20);
+    document.write("hình chữ nhật ban đầu có chiều dài :" + rectagle.getLength() + " và chiều rộng : " + rectagle.width + "<br>");
+    document.write("có diện tích là : " + rectagle.area() +"<br>");
+    document.write("có chu vi là :" + rectagle.perimeter() +"<br>");
+    rectagle.setLenght(50);
+    rectagle.setWidth(30);
+    document.write("hình chữ nhật sau khi thay đổi có chiều dài :" + rectagle.getLength() + " và chiều rộng : " + rectagle.width + "<br>");
+    document.write("có diện tích là : " + rectagle.area() +"<br>");
+    document.write("có chu vi là :" + rectagle.perimeter() +"<br>");
 
 </script>
 </body>

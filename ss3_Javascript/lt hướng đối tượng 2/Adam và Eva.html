@@ -25,7 +25,7 @@
 
         decrease() {
             if (this.isEmpty() === true) {
-                return this.weight--
+                return --this.weight
             }
         }
     }
@@ -73,22 +73,37 @@
         }
 
         raiseWeight() {
-            return this.weight++
+            return ++this.weight
         }
     }
 
     var apple = new Apple(10);
     var adam = new Human("Adam", "male", 70);
     var eva = new Human("Eva", "female", 45);
-    if(adam.checkApple(apple)=== true){
-        for (let i = 0; i < 10; i++) {
-            if(i%2!==0){
-                document.write(adam.say("my turn"));
-                document.write(adam.raiseWeight());
-                document.write(apple.)
+    document.write("Before :" + "<br>"
+        + "weight of Adam : " + adam.weight + "<br>"
+        + "weight of Eva : " + eva.weight + "<br>"
+    );
+    document.write("After Adam found an apple:" + "<br>");
+    let i = 1;
+    if (adam.checkApple(apple) === true) {
+        document.write("Adam said: " + adam.say("This apple is edible and it has a mass of ") + apple.weight + "<br>");
+        while (adam.checkApple(apple) === true || eva.checkApple(apple) === true) {
+            if (i % 2 !== 0) {
+                document.write("Adam said: " + adam.say("my turn - ") +
+                    "weight of apple: " + apple.decrease() + " - " +
+                    "weight of Adam: " + adam.raiseWeight() + "<br>")
+            } else {
+                document.write("Eva said: " + eva.say("my turn - ") +
+                    "weight of apple: " + apple.decrease() + " - " +
+                    "weight of Eva : " + adam.raiseWeight() + "<br>")
             }
+            i++;
         }
+    } else {
+        document.write("Adam said: " + adam.say("This apple is inedible") + "<br>");
     }
+    document.write("Eva said: " + eva.say("Let's go finding another apple.") + "<br>");
 
 </script>
 </body>
