@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi vào đây");
+    let arrCount = [];
+    for (let i = 0; i < str.length; i++) {
+        if(str[i] === str[i].toUpperCase() && str[i]!==" "){
+            arrCount.push(str[i])
+        }
+    }
+    if(arrCount.length!==0){
+        document.write("chuỗi có số kí tự in hoa là " + arrCount.length);
+    }else{
+        document.write("the Strings is not contain upper char");
+    }
+</script>
+</body>
+</html>

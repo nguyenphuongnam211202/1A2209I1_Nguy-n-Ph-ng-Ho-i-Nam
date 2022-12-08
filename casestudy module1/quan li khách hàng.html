@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quan li khach hang</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<label>Name:<input id="name" type="text"></label>
+<label> Age: <input id="age" type="text"></label>
+<label> Class: <input id="class" type="text"> </label>
+<input type="button" onclick="add()" value="Add">
+<p id="result">
+</p>
+<script>
+    class Student {
+        constructor(name, age, className) {
+            this.name = name;
+            this.age = age;
+            this.className = className;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(value) {
+            this.name = value;
+        }
+
+        getAge() {
+            return this.age;
+        }
+
+        setAge(value) {
+            this.age = value;
+        }
+
+        getClassName() {
+            return this.className;
+        }
+
+        setClassName(value) {
+            this.className = value;
+        }
+    }
+
+    let student1 = new Student("Nam", 20, "A0922I1");
+    let student2 = new Student("Nhi", 19, "A0922I1");
+    let arrStudent = [];
+
+    function display(arr) {
+        let str = "<table border='1px' >\n" +
+            "    <tr>\n" +
+            "        <th>Tên</th>\n" +
+            "        <th>Tuổi</th>\n" +
+            "        <th>Lớp</th>" +
+            "        <th colspan='2'>Hành động</th>"
+        "</tr>";
+        for (let i = 0; i < arr.length; i++) {
+            str += "<tr>"
+                + "<td>" + arr[i].getName() + "</td>"
+                + "<td>" + arr[i].getAge() + "</td>"
+                + "<td>" + arr[i].getClassName() + "</td>"
+                + "<td>" + "<input type='button' value='xóa' onclick='remove()'>" + "</td>"
+                + "<td>" + "<input type='button' value='sửa' onclick='edit(" + i + ")'>" + "</td>"
+                + "</tr>";
+        }
+        str += "</table>";
+        document.getElementById("result").innerHTML = str;
+    }
+
+    display(arrStudent);
+
+    function add() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let className = document.getElementById("class").value;
+        let newStudent = new Student(name, age, className);
+        arrStudent.push(newStudent);
+        display(arrStudent);
+    }
+
+    function remove(value) {
+        arrStudent.splice(value, 1);
+        display(arrStudent);
+    }
+
+    function edit(value) {
+        let name = prompt("nhập tên");
+        let age = +prompt("nhập tuổi");
+        let className = prompt("nhập lớp");
+        arrStudent[value].setName(name);
+        arrStudent[value].setAge(age);
+        arrStudent[value].setClassName(className);
+        display(arrStudent);
+    }
+
+
+</script>
+</body>
+</html>

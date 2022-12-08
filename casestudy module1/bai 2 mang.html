@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let arrA = [];
+    let nA = +prompt("nhập số phần tử của mảng A");
+    for (let i = 0; i < nA; i++) {
+        arrA[i] = +prompt("nhập phần tử mảng A");
+    }
+    let arrB = [];
+    let nB = +prompt("nhập số phần tử của mảng B");
+    for (let i = 0; i < nB; i++) {
+        arrB[i] = +prompt("nhập phần tử mảng B");
+    }
+    let arrBNotA = [];
+    for (let i = 0; i < arrB.length; i++) {
+        if (arrA.indexOf(arrB[i]) === -1 && arrBNotA.indexOf(arrB[i] === -1)) {
+            arrBNotA.push(arrB[i])
+        }
+    }
+    let arrBnotASort = arrBNotA.sort(function (a, b) {
+        return a - b
+    });
+    document.write("B not A = " + arrBnotASort)
+
+</script>
+</body>
+</html>

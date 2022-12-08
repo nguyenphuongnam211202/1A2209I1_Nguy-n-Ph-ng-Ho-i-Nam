@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<script>
+    let strA = prompt("nhập vào chuỗi thứ nhất");
+    let arrA = [];
+    for (let i = 0; i < strA.length; i++) {
+        arrA[i] = strA[i];
+    }
+    let strB = prompt("nhập vào chuỗi thứ hai");
+    let arrB = []
+    for (let i = 0; i < strB.length; i++) {
+        arrB[i] = strB[i];
+    }
+    let arrTemp = [];
+    if (arrA.length > arrB.length) {
+        for (let i = 0; i < arrA.length; i++) {
+            if (arrB.indexOf(arrA[i]) !== -1) {
+                arrTemp.push(arrA[i]);
+                arrB.splice(arrB.indexOf(arrA[i]), 1)
+            }
+        }
+    } else {
+        for (let i = 0; i < arrB.length; i++) {
+            if (arrA.indexOf(arrB[i]) !== -1) {
+                arrTemp.push(arrB[i]);
+                arrA.splice(arrA.indexOf(arrB[i]), 1)
+            }
+        }
+    }
+    document.write(arrTemp.length)
+</script>
+</body>
+</html>

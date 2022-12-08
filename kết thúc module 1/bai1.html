@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 20; i++) {
+        arr[i] = +prompt("nhập phần tử của mảng");
+    }
+    document.write("mảng nhập vào là : " + arr + "<br>");
+    let tongChan = 0,
+        tongLe = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            tongChan += arr[i];
+        } else {
+            tongLe += arr[i];
+        }
+    }
+    document.write("tổng chẵn = " + tongChan + "<br>");
+    document.write("tổng lẽ = " + tongLe + "<br>")
+    let result = tongChan - tongLe;
+    document.write("kết quả = (tổng chẵn - tổng lẻ) = " + result);
+</script>
+</body>
+</html>

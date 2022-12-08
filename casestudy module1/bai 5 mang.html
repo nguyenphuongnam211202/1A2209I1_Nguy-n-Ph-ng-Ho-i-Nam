@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<div><input type="button" onclick="choose()" value="chọn món">
+</div>
+<script>
+    let menu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let price = [15000, 25000, 25000, 25000, 5000, 20000];
+    document.write("DANH SÁCH MENU : <br> ")
+    for (let i = 0; i < menu.length; i++) {
+        document.write(i + 1, ".", menu[i], " : ", price[i], "đ", "<br>")
+    }
+
+    function choose() {
+        let bill = 0;
+        let choice;
+        let i = 1;
+        document.write("Các món bạn đã chọn là : <br>");
+        do {
+            choice = +prompt("nhập số bạn muốn chọn");
+            if (choice !== 7) {
+                let amount = +prompt("nhập số lượng");
+                document.write(i, ". ", menu[choice - 1], " - số lượng : ", amount, " - thành tiền : ", price[choice - 1] * amount, "đ <br>");
+                bill = bill + price[choice - 1] * amount
+            } else {
+                break;
+            }
+            i++
+        } while (choice !== 7)
+        document.write("Tổng tiền phải trả là : ", bill, "đ")
+    }
+</script>
+</body>
+</html>

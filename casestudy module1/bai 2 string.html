@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi vào đây");
+    let strTemp =[]
+    for (let i = 0; i < str.length; i++) {
+        if(strTemp.indexOf(str[i])===-1){
+            strTemp.push(str[i])
+        }
+    }
+    document.write("số kí tự trong chuỗi nhập vào là : ",strTemp.length," kí tự, bao gồm ",strTemp)
+</script>
+</body>
+</html>

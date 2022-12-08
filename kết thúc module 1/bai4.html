@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<label>Mã điện thoại:<input id="ma" type="text"></label>
+<label> Tên: <input id="ten" type="text"></label>
+<label> Hãng sản xuất: <input id="hang" type="text"> </label>
+<label> Giá: <input id="gia" type="text"> </label>
+<input type="button" onclick="add()" value="Add">
+<p id="result">
+<script>
+    class dienThoai{
+        constructor(maDienThoai,ten,hangSanXuat,gia) {
+            this.maDienThoai = maDienThoai;
+            this.ten = ten;
+            this.hangSanXuat = hangSanXuat;
+            this.gia = gia;
+        }
+        getMaDienThoai(){
+            return this.maDienThoai;
+        }
+        setMaDienThoai(value){
+            this.maDienThoai = value;
+        }
+        getTen(){
+            return this.ten;
+        }
+        setTen(value){
+            this.ten = value;
+        }
+        getHangSanXuat(){
+            return this.hangSanXuat;
+        }
+        setHangSanXuat(value){
+            this.hangSanXuat = value;
+        }
+        getGia(){
+            return this.gia;
+        }
+        setGia(value){
+            this.gia = value;
+        }
+    }
+    let dienThoai1= new dienThoai("IP10","iphone 10","Apple",11000000);
+    let dienThoai2= new dienThoai("SS10","samsung S10","Samsung",10000000);
+    let arr =[dienThoai1,dienThoai2];
+    function display(arr) {
+        let str = "<table border='1px' >\n" +
+            "    <tr>\n" +
+            "        <th>Mã điện thoại</th>\n" +
+            "        <th>Tên</th>\n" +
+            "        <th>Hãng Sản xuất</th>" +
+            "        <th>Giá</th>"
+        "</tr>";
+        for (let i = 0; i < arr.length; i++) {
+            str += "<tr>"
+                + "<td>" + arr[i].getMaDienThoai() + "</td>"
+                + "<td>" + arr[i].getTen() + "</td>"
+                + "<td>" + arr[i].getHangSanXuat() + "</td>"
+                + "<td>" + arr[i].getGia() + "</td>";
+        }
+        str += "</table>";
+        document.getElementById("result").innerHTML = str;
+    }
+
+    display(arr);
+    function add() {
+        let maDienThoai = document.getElementById("ma").value;
+        let ten = document.getElementById("ten").value;
+        let hangSanXuat = document.getElementById("hang").value;
+        let gia = document.getElementById("gia").value;
+        let newDienThoai = new dienThoai(maDienThoai, ten,hangSanXuat,gia);
+        arr.push(newDienThoai);
+        display(arr);
+    }
+
+
+
+</script>
+</body>
+</html>

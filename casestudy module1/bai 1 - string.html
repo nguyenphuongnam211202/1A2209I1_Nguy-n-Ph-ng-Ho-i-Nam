@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi vào đây");
+    let arr = [];
+    for (let i = 0; i < str.length; i++) {
+        if (i === 0 && str[i] === " "){
+            continue;
+        }
+        if (str[i] === " " && str[i+1] === " "){
+            continue;
+        }
+        if (i!==0 && isNaN(str[i]) && str[i] !== " " && str[i-1] === " "){
+            arr.push(str[i].toUpperCase());
+            continue;
+        }
+        if (i===0 && isNaN(str[i]) && str[i] !== " "){
+            arr.push(str[i].toUpperCase());
+            continue;
+        }
+
+        arr.push(str[i].toLowerCase());
+    }
+    document.write(arr.join(""))
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<script>
+    let arrChars = ["không","một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let arrNumbers = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9" ];
+    let number = prompt("nhập một số");
+    let arrResult = [];
+    for (let i = 0; i <number.length ; i++) {
+        arrResult.push(arrChars[arrNumbers.indexOf(number[i])])
+    }
+    document.write(arrResult.join(" "))
+</script>
+</body>
+</html>

@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    var strA = prompt("nhập chuỗi A vào đây"),
-        strB = prompt("nhập chuỗi B vào đây"),
+    var arrA = prompt("nhập chuỗi A vào đây"),
+        arrB = prompt("nhập chuỗi B vào đây"),
         count = 0;
-    if (strA.length === strB.length) {
-        for (let i = 0; i < strA.length; i++) {
-            if (strA[i] === strB[i]) {
+    if (arrA.length === arrB.length) {
+        for (let i = 0; i < arrA.length; i++) {
+            if (arrA[i] === arrB[i]) {
                 count++
             }
         }
-        if (count === strA.length) {
+        if (count === arrA.length) {
             document.write("hai chuỗi A và B giống nhau")
         } else {
             document.write("hai chuỗi A và B khác nhau")
