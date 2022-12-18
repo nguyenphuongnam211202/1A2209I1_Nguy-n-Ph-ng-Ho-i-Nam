@@ -1,13 +1,13 @@
 package ss2;
 
-public class bai3 {
+public class bai2 {
     public static void main(String[] args) {
-        int i = 2;
-        while(i<=100){
-            if(isPrime(i)){
-                System.out.println(i + " ");
+        System.out.println("cac so nguyen to be hon 100 la :");
+        int i = 0;
+        while (i++ < 100) {
+            if (isPrime(i)) {
+                System.out.print(i + "  ");
             }
-            i++;
         }
     }
     public static boolean isPrime(int n) {
@@ -19,4 +19,13 @@ public class bai3 {
         }
         return true;
     }
-}
+
+
+    }
+
+
+
+
+
+
+
