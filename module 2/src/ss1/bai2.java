@@ -5,12 +5,12 @@ public class bai2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter your int number from 0 to 999: ");
-        int numberInput = scanner.nextInt();
-        if(numberInput<100){
-            numberLessThan100(numberInput);
+        int numIn = scanner.nextInt();
+        if(numIn<100){
+            numberLessThan100(numIn);
         } else {
-            int hundresses = numberInput/100;
-            int tens = numberInput % 100;
+            int hundresses = numIn/100;
+            int tens = numIn % 100;
             switch (hundresses){
                 case 1:
                     System.out.print("One Hundress  and ");
