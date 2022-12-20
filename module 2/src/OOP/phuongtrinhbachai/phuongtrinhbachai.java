@@ -1,4 +1,4 @@
-package OOP.phuongtrinhbachai;
+package oop.phuongtrinhbachai;
 
 import java.util.Scanner;
 

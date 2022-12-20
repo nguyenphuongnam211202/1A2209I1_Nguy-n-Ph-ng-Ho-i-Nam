@@ -1,4 +1,4 @@
-package OOP.phuongtrinhbachai;
+package oop.phuongtrinhbachai;
 public class QuadraticEquation {
     private double a,b,c;
 
