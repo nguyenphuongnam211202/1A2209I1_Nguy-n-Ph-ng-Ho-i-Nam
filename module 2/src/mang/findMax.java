@@ -3,8 +3,6 @@ package mang;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class findMax {
     static Scanner sc = new Scanner(System.in);
