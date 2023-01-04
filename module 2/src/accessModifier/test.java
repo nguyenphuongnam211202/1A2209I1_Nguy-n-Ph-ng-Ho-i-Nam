@@ -1,5 +1,0 @@
-package accessModifier;
-
-
-public 
-}
