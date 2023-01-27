@@ -1,10 +1,8 @@
 package stackAndQueue.bai3;
 
-import arrayListAndLinkedList.MyLinkedList;
-
 public class CircularLinkedList {
 
-    Queue queue = new Queue();
+    private Queue queue;
 
 
     private class Node {
