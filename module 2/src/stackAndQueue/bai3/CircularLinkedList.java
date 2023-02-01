@@ -2,7 +2,7 @@ package stackAndQueue.bai3;
 
 public class CircularLinkedList {
 
-    private Queue queue;
+    Queue queue = new Queue();
 
 
     private class Node {
@@ -96,7 +96,6 @@ public class CircularLinkedList {
         cl.enQueue(2);
         cl.enQueue(5);
         cl.enQueue(1);
-        cl.deQueue();
         cl.display();
     }
 }
