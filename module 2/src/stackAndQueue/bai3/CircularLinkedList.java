@@ -25,7 +25,6 @@ public class CircularLinkedList {
         public Node rear = null;
 
         public Queue() {
-            front = rear;
         }
 
     }
