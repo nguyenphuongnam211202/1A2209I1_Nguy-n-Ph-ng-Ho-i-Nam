@@ -138,6 +138,12 @@ and hd.ma_nhan_vien = nv.ma_nhan_vien
 
 -- câu 17:
 
+-- câu 18: 
+select ho_ten
+from khach_hang kh
+join hop_dong hd on kh.ma_khach_hang = hd.ma_hop_dong
+where year(hd.ngay_ket_thuc) < 2021
+
 
 
 
