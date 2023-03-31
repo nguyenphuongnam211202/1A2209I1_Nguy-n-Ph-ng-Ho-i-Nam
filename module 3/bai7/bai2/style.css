@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    border: 1px solid green;
+    height: 100px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 20%;
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    float: left;
+    display: inline-block;
+}
+.logo img{
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    
+}
+
+.signin {
+    width: 60%;
+    border: 1px solid black;
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5%;
+    float: right;
+}
+
+.content {
+    border: 1px solid green;
+    height: 550px;
+}
+
+.feature_image {
+    width: 35%;
+    border: 1px solid green;
+    height: 250px;
+    margin: 50px 5%;
+    float: left;
+}
+
+.signup {
+    width: 44%;
+    border: 1px solid green;
+    height: 450px;
+    margin: 50px 5%;
+    float: right;
+}
+
+.footer {
+    border: 1px solid green;
+    height: 200px;
+}
+
+.footer_content {
+    width: 90%;
+    border: 1px solid black;
+    height: 100px;
+    margin: 5% auto;
+}
