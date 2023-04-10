@@ -21,12 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="41b289d0-1e7c-45ef-9bf2-e08219554ec5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai7/bai2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai7/bai2/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai5.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -38,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,6 +78,13 @@
       <workItem from="1680367187529" duration="6026000" />
       <workItem from="1680396840889" duration="420000" />
       <workItem from="1680397585340" duration="814000" />
+      <workItem from="1680399348708" duration="224000" />
+      <workItem from="1680438968147" duration="71000" />
+      <workItem from="1680489891933" duration="2515000" />
+      <workItem from="1680540822689" duration="596000" />
+      <workItem from="1680567851630" duration="400000" />
+      <workItem from="1680571685647" duration="1945000" />
+      <workItem from="1681012702631" duration="364000" />
     </task>
     <servers />
   </component>
@@ -86,5 +102,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1680571847398">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1680571847398" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1680568253878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1680568253878" />
   </component>
 </project>
