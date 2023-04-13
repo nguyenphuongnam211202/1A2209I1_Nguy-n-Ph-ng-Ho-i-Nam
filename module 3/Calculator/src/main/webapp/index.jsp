@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-    <form action="" method="get">
+    <form action="/calculator" method="post">
     <h1>Calculator</h1>
     <table>
         <tr>
@@ -28,10 +28,12 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="button" value="Calculate"></td>
+            <td><input type="submit" value="Calculate"></td>
         </tr>
     </table>
     </form>
+    <p>${result}</p>
+
 </div>
 </body>
 </html>

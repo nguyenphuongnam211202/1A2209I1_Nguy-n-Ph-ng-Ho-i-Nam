@@ -1,7 +1,7 @@
 package model;
 
-public class calculate {
-    public static float calculator(float firstOperand, float secondOperand, String operator) {
+public class calculator {
+    public static float calculate(float firstOperand, float secondOperand, String operator) {
         switch (operator) {
             case "cong":
                 return firstOperand + secondOperand;
