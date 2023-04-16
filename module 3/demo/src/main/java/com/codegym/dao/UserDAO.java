@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UserDAO implements IUserDAO {
 
-    private String jdbcURL = "jdbc:mysql://localhost:3306/demo?useSSL=false";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/demo";
     private String jdbcUsername = "root";
     private String jdbcPassword = "12345";
 
@@ -22,7 +22,7 @@ public class UserDAO implements IUserDAO {
 
     private static final String SELECT_USER_BY_COUNTRY = "select id,name,email,country from users where country =?";
 
-    private static final String SORT_BY_NAME = "select id,name,email,country from users order by name";
+    private static final String SORT_BY_NAME = "select id,name,email,country from users where country like ? order by name";
 
     public UserDAO() {
     }
@@ -143,10 +143,11 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public List<User> sortByName() {
+    public List<User> sortByName(String searchValue) {
         List<User> users = new ArrayList<>();
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SORT_BY_NAME);) {
             System.out.println(preparedStatement);
+            preparedStatement.setString(1, "%" + searchValue + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("id");

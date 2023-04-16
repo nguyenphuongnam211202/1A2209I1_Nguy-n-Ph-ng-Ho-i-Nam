@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>List</title>
     <link rel="stylesheet" href="webjars\bootstrap\5.2.3\css\bootstrap.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -45,9 +45,12 @@
         </p>
 
     </form>
-    <form action="/users" method="post">
+    <form action="/users">
+        <input type="hidden" name="searchValue" value="${search}">
         <input type="submit" name="action" value="sortByName" >
     </form>
+
+
 </center>
 <table class="table table-dark table-striped">
     <tr  class="table-danger">

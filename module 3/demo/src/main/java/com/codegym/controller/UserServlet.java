@@ -2,7 +2,10 @@ package com.codegym.controller;
 
 import java.io.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -32,13 +35,16 @@ public class UserServlet extends HttpServlet {
                 showNewForm(request, response);
                 break;
             case "edit":
-                showEditForm(request,response);
+                showEditForm(request, response);
                 break;
             case "delete":
-                showDeleteForm(request,response);
+                showDeleteForm(request, response);
                 break;
             default:
                 listUser(request, response);
+                break;
+            case "sortByName":
+                sortByName(request, response);
                 break;
 
         }
@@ -55,16 +61,13 @@ public class UserServlet extends HttpServlet {
                 createUser(request, response);
                 break;
             case "update":
-                updateUser(request,response);
+                updateUser(request, response);
                 break;
             case "delete":
-                deleteUser(request,response);
+                deleteUser(request, response);
                 break;
             case "findByCountry":
-                findByCountry(request,response);
-                break;
-            case "sortByName":
-                sortByName(request,response);
+                findByCountry(request, response);
                 break;
             default:
                 break;
@@ -82,8 +85,18 @@ public class UserServlet extends HttpServlet {
 
 
     protected void sortByName(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<User> listUser = userDAO.sortByName();
-        request.setAttribute("listUser", listUser);
+        List<User> users;
+        String q = request.getParameter("searchValue");
+//        if(q != ""){
+//
+//            users = userDAO.selectAllUsers().stream().filter(e -> e.getCountry().equals(q)).sorted(Comparator.comparing(User::getName)).collect(Collectors.toList());
+//        }
+//        else {
+//            users =userDAO.sortByName();
+//        }
+
+
+        request.setAttribute("listUser", userDAO.sortByName(q));
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/list.jsp");
         dispatcher.forward(request, response);
     }
@@ -92,6 +105,9 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("findCountry");
         List<User> listUser = userDAO.selectUserByCountry(country);
         request.setAttribute("listUser", listUser);
+        request.setAttribute("search", country);
+
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/list.jsp");
         dispatcher.forward(request, response);
     }
@@ -101,15 +117,15 @@ public class UserServlet extends HttpServlet {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String country = request.getParameter("country");
-        User user = new User(id,name,email,country);
+        User user = new User(id, name, email, country);
         try {
             userDAO.updateUser(user);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        request.setAttribute("message","update successful");
+        request.setAttribute("message", "update successful");
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/edit.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 
     protected void createUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -136,18 +152,18 @@ public class UserServlet extends HttpServlet {
     protected void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         User user = userDAO.selectUser(id);
-        request.setAttribute("user",user);
+        request.setAttribute("user", user);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/edit.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
 
     }
 
     protected void showDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         User user = userDAO.selectUser(id);
-        request.setAttribute("user",user);
+        request.setAttribute("user", user);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/delete.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 
 
@@ -158,8 +174,8 @@ public class UserServlet extends HttpServlet {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        request.setAttribute("message","delete successful");
+        request.setAttribute("message", "delete successful");
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/delete.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 }
