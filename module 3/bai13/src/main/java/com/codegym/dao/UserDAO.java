@@ -17,9 +17,9 @@ public class UserDAO implements IUserDAO {
             " (?, ?, ?);";
     private static final String SELECT_USER_BY_ID = "select id,name,email,country from users where id =?";
 
-    private static final String SELECT_ALL_USERS = "select * from users";
-    private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
-    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+    private static final String SELECT_ALL_USERS = "call demo.show_list_user();";
+    private static final String DELETE_USERS_SQL = "call demo.delete_user(?);";
+    private static final String UPDATE_USERS_SQL = "call demo.edit_user(?, ?, ?, ?);";
 
     private static final String SELECT_USER_BY_COUNTRY = "select id,name,email,country from users where country =?";
 
@@ -101,9 +101,9 @@ public class UserDAO implements IUserDAO {
     @Override
     public List<User> selectAllUsers() {
         List<User> users = new ArrayList<>();
-        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
-            System.out.println(preparedStatement);
-            ResultSet rs = preparedStatement.executeQuery();
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(SELECT_ALL_USERS)) {
+            System.out.println(callableStatement);
+            ResultSet rs = callableStatement.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
@@ -121,9 +121,9 @@ public class UserDAO implements IUserDAO {
     @Override
     public boolean deleteUser(int id) throws SQLException {
         boolean rowDeleted;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
-            statement.setInt(1, id);
-            rowDeleted = statement.executeUpdate() > 0;
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(DELETE_USERS_SQL)) {
+            callableStatement.setInt(1, id);
+            rowDeleted = callableStatement.executeUpdate() > 0;
         }
         return rowDeleted;
     }
@@ -132,13 +132,13 @@ public class UserDAO implements IUserDAO {
     @Override
     public boolean updateUser(User user) throws SQLException {
         boolean rowUpdated;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
-            statement.setString(1, user.getName());
-            statement.setString(2, user.getEmail());
-            statement.setString(3, user.getCountry());
-            statement.setInt(4, user.getId());
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(UPDATE_USERS_SQL)) {
+            callableStatement.setString(2, user.getName());
+            callableStatement.setString(3, user.getEmail());
+            callableStatement.setString(4, user.getCountry());
+            callableStatement.setInt(1, user.getId());
 
-            rowUpdated = statement.executeUpdate() > 0;
+            rowUpdated = callableStatement.executeUpdate() > 0;
         }
         return rowUpdated;
     }
