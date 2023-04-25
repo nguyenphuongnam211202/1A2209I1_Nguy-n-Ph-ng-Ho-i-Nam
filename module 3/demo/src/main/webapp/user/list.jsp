@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 13/04/2023
-  Time: 5:38 CH
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -12,8 +6,8 @@
 <head>
     <title>List</title>
     <link rel="stylesheet" href="webjars\bootstrap\5.2.3\css\bootstrap.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="webjars/izitoast/1.4.0/dist/css/iziToast.min.css">
     <style>
         #button{
             background-color: #d78b3c;
@@ -31,7 +25,7 @@
     </style>
 </head>
 <body>
-<center>
+<section>
     <h1>User Management</h1>
     <caption> <h2>
         <a href="/users">List user</a>
@@ -49,9 +43,10 @@
         <input type="hidden" name="searchValue" value="${search}">
         <input type="submit" name="action" value="sortByName" >
     </form>
+</section>
 
 
-</center>
+
 <table class="table table-dark table-striped">
     <tr  class="table-danger">
         <th>ID</th>
@@ -75,5 +70,25 @@
         </tr>
     </c:forEach>
 </table>
+<script src="webjars/izitoast/1.4.0/dist/js/iziToast.js"></script>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    if ( urlParams.get('isCreate')>1){
+        iziToast.success({
+            timeout: 20000,
+            position: "topRight",
+            title: 'OK',
+            message: 'Bạn đã tạo thành công!',
+        });
+    }else if ( urlParams.get('isDelete')>0){
+        iziToast.success({
+            title: 'OK',
+            message: 'Ban da xoa thanh cong',
+        });
+    }
+</script>
 </body>
+
 </html>

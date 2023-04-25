@@ -14,9 +14,9 @@
 <body>
 <center>
     <h1>User Management</h1>
-    <h2>
+    <button>
         <a href="/users">Back to list user</a>
-    </h2>
+    </button>
     <caption><h2>Create new user</h2></caption>
 </center>
 <div>

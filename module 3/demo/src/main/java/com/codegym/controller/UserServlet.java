@@ -14,7 +14,7 @@ import javax.servlet.annotation.*;
 import com.codegym.dao.UserDAO;
 import com.codegym.model.User;
 
-@WebServlet(name = "UserServlet", urlPatterns = {"/users", ""})
+@WebServlet(name = "UserServlet", urlPatterns = {"/users",""})
 public class UserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UserDAO userDAO;
@@ -138,9 +138,10 @@ public class UserServlet extends HttpServlet {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        request.setAttribute("message", "create new user successful");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/user/create.jsp");
-        dispatcher.forward(request, response);
+//        request.setAttribute("message", "create new user successful");
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/user/create.jsp");
+//        dispatcher.forward(request, response);
+        response.sendRedirect("/users?action=&isCreate=2");
     }
 
 
