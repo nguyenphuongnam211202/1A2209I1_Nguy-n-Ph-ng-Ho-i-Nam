@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="webjars\bootstrap\5.2.3\css\bootstrap.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
     <style>
         #button {
             background-color: #d78b3c;
@@ -41,6 +40,7 @@
     </h2>
 </center>
 <table class="table table-dark table-striped" id="tableProduct">
+    <thead>
     <tr class="table-danger">
         <th>ID</th>
         <th>Name</th>
@@ -49,8 +49,10 @@
         <th>COLOR</th>
         <th>DESCRIBE</th>
         <th>CATEGORY</th>
-        <th colspan="2" style="text-align: center">Actions</th>
+        <th style="text-align: center">Actions</th>
     </tr>
+    </thead>
+    <tbody>
     <c:forEach items="${productList}" var="product">
         <tr class="table-warning">
             <td>${product.id}</td>
@@ -62,14 +64,14 @@
             <td>${product.category}</td>
             <td>
                 <a  class="btn btn-primary" href="/products?action=edit&id=${product.id}">Edit</a>
-            </td>
-            <td><button
+            <button
                     onclick="showModelDelete('${product.id}','${product.name}')"
                     type="button" class="btn btn-danger" data-toggle="modal" data-target="#modelDelete">Delete</button>
 
             </td>
         </tr>
     </c:forEach>
+    </tbody>
 </table>
 
 <!-- Modal -->
@@ -103,10 +105,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-<script src="../static/datatables/js/jquery.dataTables.js"></script>
-<script src="../static/datatables/js/dataTables.bootstrap4.js"></script>
-
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function () {
         $('#tableProduct').dataTable({
