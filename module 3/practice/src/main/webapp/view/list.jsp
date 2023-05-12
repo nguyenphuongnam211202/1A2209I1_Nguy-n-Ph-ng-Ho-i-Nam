@@ -32,7 +32,7 @@
         <div style="float: right; display: inline-block; width: 40%;margin: 10px" >
             <form action="/products" method="post">
                 <div class="input-group mb-3" >
-                    <input type="text" class="form-control" placeholder="Nhập id muốn tìm" name="id" >
+                    <input type="text" class="form-control" placeholder="Nhập từ muốn tìm" name="key" >
                     <input class="btn btn-outline-success" type="submit" id="button-addon2" name="action" value="search">
                 </div>
             </form>

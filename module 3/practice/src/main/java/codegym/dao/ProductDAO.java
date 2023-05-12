@@ -13,9 +13,9 @@ public class ProductDAO implements IProductDAO {
     public static final String GET_ID_BY_NAME = "call products.get_id_by_name(?);";
     public static final String INSERT_INTO_PRODUCT = "INSERT INTO product(name,cost,quantity,color,`describe`,id_category ) VALUES (?, ?, ?, ?, ?, ?);";
 
-    private static final String DELETE_PRODUCT_SQL = "delete from product where id = ?";
     private static final String UPDATE_PRODUCT_SQL = "update product set name = ?,cost= ?, quantity =?, color = ?, `describe` =?, id_category =? where id = ?;";
     public static final String DELETE_PRODUCT = "delete from product where id = ?";
+    public static final String SEARCH_SQL = "select id, `name`,cost,quantity,color,`describe`,categoryName from products.product join products.category on product.id_category = category.id_category where id like ? or `name` like ? or cost like ? or quantity like ? or color like ? or `describe` like ? or categoryName like ? order by id;";
     private String jdbcURL = "jdbc:mysql://localhost:3306/products";
     private String jdbcUsername = "root";
     private String jdbcPassword = "12345";
@@ -124,6 +124,34 @@ public class ProductDAO implements IProductDAO {
         System.out.println(preparedStatement);
         preparedStatement.executeUpdate();
 
+    }
+
+    public List<Product> searh(String key ){
+        List<Product> productList = new ArrayList<>();
+        try(Connection connection = getConnection();  PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_SQL)) {
+          preparedStatement.setString(1,"%" + key + "%");
+          preparedStatement.setString(2,"%" + key + "%");
+          preparedStatement.setString(3,"%" + key + "%");
+          preparedStatement.setString(4,"%" + key + "%");
+          preparedStatement.setString(5,"%" + key + "%");
+          preparedStatement.setString(6,"%" + key + "%");
+          preparedStatement.setString(7,"%" + key + "%");
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()){
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                int cost = rs.getInt("cost");
+                int quantity = rs.getInt("quantity");
+                String color = rs.getString("color");
+                String describe = rs.getString("describe");
+                String categoryName = rs.getString("categoryName");
+                productList.add(new Product(id, name, cost, quantity, color, describe, categoryName));
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return productList;
     }
 
     @Override

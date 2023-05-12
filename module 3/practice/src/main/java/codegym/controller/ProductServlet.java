@@ -82,9 +82,8 @@ public class ProductServlet extends HttpServlet {
 
 
     protected void searchById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        List<Product> productList = new ArrayList<>();
-        productList.add(productDAO.findById(id));
+        String key = request.getParameter("key");
+        List<Product> productList = productDAO.searh(key);
         request.setAttribute("productList",productList);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/list.jsp");
         requestDispatcher.forward(request,response);
