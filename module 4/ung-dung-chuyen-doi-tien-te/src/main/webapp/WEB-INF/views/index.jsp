@@ -6,10 +6,10 @@
 </head>
 <body>
 <h1>Ứng dụng chuyển đổi tiền tệ</h1>
-<form action="/change" method="get">
-    <input type="text" name="USD" placeholder="USD">
+<form action="/change" method="post">
+    <input type="text" name="usd" placeholder="USD">
     <input type="submit" value="change">
-    <p>${VND} <span>VND</span></p>
 </form>
+<p>${vnd} </p>
 </body>
 </html>
