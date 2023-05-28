@@ -17,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/../../module 3/exam/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 3/exam/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module 3/exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 3/exam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +193,7 @@
       <workItem from="1684600922486" duration="2332000" />
       <workItem from="1684657357902" duration="1421000" />
       <workItem from="1684761969287" duration="366000" />
-      <workItem from="1684856861224" duration="1249000" />
+      <workItem from="1684856861224" duration="1846000" />
     </task>
     <servers />
   </component>
