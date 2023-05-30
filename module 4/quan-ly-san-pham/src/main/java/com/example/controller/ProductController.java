@@ -52,6 +52,11 @@ public class ProductController {
         model.addAttribute("product", productService.findById(id));
         return "detail";
     }
+    @GetMapping("/delete/{id}")
+    public String delete(Model model, @PathVariable("id") int id){
+        productService.remove(id);
+        return "redirect:/product/list";
+    }
 
     @PostMapping("/findById")
     public String findById(Model model,@RequestParam("id") int id){
