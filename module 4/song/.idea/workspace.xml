@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04b1d7cc-dab3-4897-a264-d09353a68e52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/repository/IAppBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/service/AppBlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/com/example/app_blog/service/IAppBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/webapp/WEB-INF/view/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/webapp/WEB-INF/view/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/webapp/WEB-INF/view/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/webapp/WEB-INF/view/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/java/com/codegym/cms/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-ly-khach-hang/src/main/webapp/WEB-INF/view/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/entity/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/IMusicRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/MusicRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/IMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/MusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudentManagement1-main/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../StudentManagement1-main/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 2/src/demo/MatHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 2/src/demo/MatHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 2/src/demo/NhaSanXuat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 2/src/demo/NhaSanXuat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 3/exam/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 3/exam/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 3/exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 3/exam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/NhanVien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/QuanLyToaNha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/ToaNha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/java/com/example/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/views/employee/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/java/com/example/controller/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/config/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/entity/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/repository/impl/CategoryRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/repository/impl/CategoryRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/repository/impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/classes/java/main/codegym/vn/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/libs/demoForm-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/libs/demoForm-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/repository/impl/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/repository/impl/CategoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/repository/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demoForm/src/main/java/codegym/vn/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="song" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2QmgtygG4GlYldjLfT89z8zwMqL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/codegym/A0922I1_Nguy-n-Ph-ng-Ho-i-Nam/module 4/song&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;428c560dc3d8da005422d6bc1e72d64b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\A0922I1_Nguy-n-Ph-ng-Ho-i-Nam\module 4\song\src\main\webapp\WEB-INF\file" />
+      <recent name="D:\codegym\A0922I1_Nguy-n-Ph-ng-Ho-i-Nam\module 4\song\src\main\java\com\codegym\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : song-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="969d8392-1ba5-4ba2-bf38-3551bc3a226e" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59961" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : song-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04b1d7cc-dab3-4897-a264-d09353a68e52" name="Changes" comment="" />
+      <created>1685964389638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685964389638</updated>
+      <workItem from="1685964390651" duration="9380000" />
+      <workItem from="1686062562370" duration="7871000" />
+      <workItem from="1686146970367" duration="4000" />
+      <workItem from="1686147438627" duration="207000" />
+      <workItem from="1686302145848" duration="248000" />
+      <workItem from="1686302420694" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

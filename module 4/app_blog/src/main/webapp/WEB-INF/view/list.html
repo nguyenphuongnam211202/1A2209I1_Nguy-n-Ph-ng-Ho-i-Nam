@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="webjars\bootstrap\5.2.3\css\bootstrap.css">
+
+</head>
+<body>
+<h1>Show list</h1>
+<h3><a class="btn btn-success" th:href="@{/create}">Create</a></h3>
+<table class="table" >
+    <tr class="btn-primary">
+        <th>ID</th>
+        <th>Name Blog</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="b :${blog}" th:object="${b}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{nameBlog}"></td>
+        <td th:text="*{title}"></td>
+        <td th:text="*{content}"></td>
+        <td>
+            <a th:href="@{/detail/{id}(id=*{id})}">Detail</a>
+            <a th:href="@{/delete/{id}(id=*{id})}">Delete</a>
+            <a th:href="@{/update/{id}(id=*{id})}">Update</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

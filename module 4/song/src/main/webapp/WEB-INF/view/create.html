@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Create music</title>
+</head>
+<body>
+<form th:action="@{/music/create}" method="POST" th:object="${music}">
+  <table>
+    <tr>
+      <td>ID: </td>
+      <td><input type="text" th:field="*{id}" /></td>
+    </tr>
+    <tr>
+      <td>Ten bai hat: </td>
+      <td><input type="text" th:field="*{nameSong}" /></td>
+    </tr>
+    <tr>
+      <td>Nghe si: </td>
+      <td><input type="text" th:field="*{singer}" /></td>
+    </tr>
+    <tr>
+      <td>The loai</td>
+      <td><input type="text" th:field="*{kindSong}"/></td>
+    </tr>
+    <tr>
+      <td>Duong dan</td>
+      <td><input type="text" th:field="*{pathSong}" /></td>
+    </tr>
+    <tr>
+      <td><input type="reset" value="Reset"></td>
+      <td><input type="submit" value="Create"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+com/codegym/service/IMusicService.java
+ com.codegym.service.IMusicService
+com/codegym/model/MusicForm.java
+ com.codegym.model.MusicForm
+com/codegym/repository/IMusicRepository.java
+ com.codegym.repository.IMusicRepository
+com/codegym/model/Music.java
+ com.codegym.model.Music
+com/codegym/config/AppInit.java
+ com.codegym.config.AppInit
+com/codegym/repository/MusicRepository.java
+ com.codegym.repository.MusicRepository
+com/codegym/config/AppConfig.java
+ com.codegym.config.AppConfig
+com/codegym/controller/MusicController.java
+ com.codegym.controller.MusicController
+com/codegym/service/MusicService.java
+ com.codegym.service.MusicService
