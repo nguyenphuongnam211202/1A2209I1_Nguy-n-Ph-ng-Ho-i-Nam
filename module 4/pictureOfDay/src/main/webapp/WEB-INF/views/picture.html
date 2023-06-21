@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-<img width="50%" id="img-of-the-day">
+<img style="width: 665px; height: 354px" id="img-of-the-day">
 <form th:action="@{/saveComment}" method="post" th:object="${comment}">
     <select th:field="*{rating}">
         <option th:value="1">1 sao</option>
