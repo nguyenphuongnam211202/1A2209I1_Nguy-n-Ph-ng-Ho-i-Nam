@@ -17,6 +17,13 @@ public class Student {
         this.khoa = khoa;
     }
 
+    public Student(String mssv, String hoTen, String gioiTinh, String khoa) {
+        this.mssv = mssv;
+        this.hoTen = hoTen;
+        this.gioiTinh = gioiTinh;
+        this.khoa = khoa;
+    }
+
     public Student(){
 
     }

@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<div style="display:inline-block;float: left">
+<div >
     <form action="/students" method="post">
         <select name="listKhoa">
             <option value="khoa Toan">Khoa Toan</option>
@@ -23,6 +23,7 @@
         <input type="submit" name="action" value="xem">
     </form>
 </div>
+<a  href="/students?action=create" >Create new student</a>
 <table class="table table-dark table-striped">
     <tr  class="table-danger">
         <th>MSV</th>

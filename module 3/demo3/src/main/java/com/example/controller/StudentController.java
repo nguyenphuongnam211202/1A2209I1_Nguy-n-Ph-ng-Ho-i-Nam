@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "student", value = {"/students",""})
@@ -29,10 +30,13 @@ public class StudentController extends HttpServlet {
         }
         switch (action) {
             case "create":
+                showFormCreate(request,response);
                 break;
             case "edit":
+                showFormEdit(request,response);
                 break;
             case "delete":
+                showFormDelete(request,response);
                 break;
             default:
                 showLogin(request, response);
@@ -48,16 +52,33 @@ public class StudentController extends HttpServlet {
             action = "";
         }
         switch (action) {
-            case "create":
+            case "them moi":
+                try {
+                    create(request,response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
-            case " update":
+            case "luu lai":
+                try {
+                    update(request,response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
             case "dangnhap":
                 showList(request,response);
                 break;
             case "xem":
                 locKhoa(request,response);
+            case "xac nhan":
+                try {
+                    delete(request,response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
             default:
+                list(request,response);
                 break;
 
         }
@@ -66,6 +87,55 @@ public class StudentController extends HttpServlet {
     protected void showLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.sendRedirect("/view/login.jsp");
     }
+
+    protected void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String mssv = request.getParameter("mssv");
+        String hoTen = request.getParameter("hoTen");
+        String gioiTinh = request.getParameter("gioiTinh");
+        String khoa = request.getParameter("listKhoa");
+        Student student = new Student(id,mssv,hoTen,gioiTinh,khoa);
+        studentDAO.updateStudent(student);
+        list(request,response);    }
+    protected void create(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+        String mssv = request.getParameter("mssv");
+        String hoTen = request.getParameter("hoTen");
+        String gioiTinh = request.getParameter("gioiTinh");
+        String khoa = request.getParameter("listKhoa");
+        Student student = new Student(mssv,hoTen,gioiTinh,khoa);
+        studentDAO.insertStudent(student);
+        list(request,response);
+
+    }
+    protected void showFormEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Student student = studentDAO.findById(id);
+        request.setAttribute("student",student);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/edit.jsp");
+        requestDispatcher.forward(request,response);
+    }
+
+    protected void showFormDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Student student = studentDAO.findById(id);
+        request.setAttribute("student",student);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/delete.jsp");
+        requestDispatcher.forward(request,response);
+    }
+    protected void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        studentDAO.deleteStudent(id);
+        list(request,response);
+
+    }
+    protected void showFormCreate(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.sendRedirect("/view/create.jsp");
+    }
+    protected void list(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Student> studentList = studentDAO.selectAll();
+        request.setAttribute("studentList",studentList);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/list.jsp");
+        requestDispatcher.forward(request,response);    }
 
     protected void locKhoa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String khoa = request.getParameter("listKhoa");

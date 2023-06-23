@@ -13,5 +13,6 @@ public interface IStudentDAO {
 
     public void deleteStudent(int id) throws  SQLException;
     public Student getStudent(String userName, String password);
+    public Student findById(int id);
 
 }
