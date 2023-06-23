@@ -5,11 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe509979-de68-49d5-921a-714e98c30362" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice/src/main/java/codegym/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/src/main/java/codegym/controller/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice/src/main/java/codegym/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/src/main/java/codegym/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/src/main/webapp/view/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/bai1/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/bai1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/sandwich/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/sandwich/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/sandwich/src/main/webapp/WEB-INF/views/save.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/sandwich/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/ung-dung-chuyen-doi-tien-te/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/ung-dung-chuyen-doi-tien-te/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/ung-dung-chuyen-doi-tien-te/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudentManagement1-main/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../StudentManagement1-main/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/src/main/java/com/codegym/controller/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/SpringGreeting/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/src/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/src/ServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/untitled/untitled.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +53,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +86,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/A0922I1_Nguy-n-Ph-ng-Ho-i-Nam/module 3/exam",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683185136227</updated>
       <workItem from="1683185137476" duration="1418000" />
+      <workItem from="1684154621951" duration="68000" />
     </task>
     <servers />
   </component>
