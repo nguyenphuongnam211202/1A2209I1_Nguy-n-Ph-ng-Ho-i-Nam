@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail product</title>
+</head>
+<body>
+<h1 th:text="#{title}">Detail product</h1>
+<table th:object="${product}">
+    <tr>
+        <td>ID:</td>
+        <td th:text="*{id}"></td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td th:text="*{name}"></td>
+    </tr>
+
+    <tr>
+        <td>Price:</td>
+        <td th:text="${#numbers.formatCurrency(product.price)}"></td>
+    </tr>
+    <tr>
+        <td>Picture</td>
+        <td ><img style="width:200px;" th:src="@{/img/{anh}.jpg(anh=${product.img})}"></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/add/__${product.id}__(action='list')}" class="btn btn-primary">Add To Cart</a></td>
+    </tr>
+</table>
+<a th:text="|Back to list|" th:href="@{/shop}"></a>
+</body>
+</html>
