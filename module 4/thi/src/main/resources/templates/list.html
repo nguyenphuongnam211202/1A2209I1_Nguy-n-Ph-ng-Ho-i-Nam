@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>list</title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" rel="stylesheet">
 </head>
 <body>
-$END$
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <div th:if="${message}" class="alert alert-primary" role="alert" th:text="${message}">
+    </div>
+  </div>
+  <div class="col-lg-3"></div>
+</div>
+<section>
+  <div class="container">
+    <h1 style="text-align:center">Danh sách Sản Phẩm</h1>
+    <a th:href="@{/create}" class="btn btn-success" style="display: inline-block; float: left">
+      Create new product</a>
+    <form style="display: inline-block; float: right" th:action="@{/search}" method="get">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search by name" name="name">
+        <input type="text" class="form-control" placeholder="Search by category" name="category">
+        <input type="number" class="form-control"  placeholder="Search by price" name="price">
+        <input class="btn btn-success" type="submit" value="Search"/>
+      </div>
+    </form>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>STT</th>
+        <th>Chọn</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá bắt đầu</th>
+        <th>Category</th>
+        <th>tình trạng</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="p: ${products}" th:object="${p}">
+        <td th:text="*{idProduct}"></td>
+        <td><input type="checkbox"></td>
+        <td th:text="*{name}"></td>
+        <td th:text="*{price}"></td>
+        <td th:text="*{category.categoryName}"></td>
+        <td th:text="*{status}"></td>
+        <td>
+          <a th:href="@{/update/{id}(id=*{idProduct})}" class="btn btn-warning">Update</a>
+          <button class="btn btn-danger btn-delete"
+                  th:data-product-id="${p.idProduct}"
+                  th:data-product-name="${p.name}">
+            Delete
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-between align-items-center">
+      <a class="btn btn-primary" th:href="@{/list(page=${products.number - 1})}"
+         th:if="${products.hasPrevious()}">
+        Previous
+      </a>
+      <span class="mx-2">
+                Page <span th:text="${products.number + 1}"></span>/<span th:text="${products.totalPages}"></span>
+            </span>
+      <a class="btn btn-primary" th:href="@{/list(page=${products.number + 1})}"
+         th:if="${products.hasNext()}">
+        Next
+      </a>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <a class="btn btn-default btn-lg" href="/list">Back to Home page</a>
+  </div>
+</section>
+
+
+<!--MODAL DETETE-->
+
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xóa <b id="product_name"></b> không ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <a id="deleteButton" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--LINK SCRIPT XỬ LÝ MODAL-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+<!--CODE JS XỬ LÝ MODAL-->
+<script>
+  $(document).ready(function () {
+    $('.btn-delete').click(function () {
+      $('#confirmDeleteModal').modal('show');
+      var productId = $(this).data('product-id');
+      var productName = $(this).data('product-name');
+      document.getElementById("product_name").innerText = productName;
+      $('#confirmDeleteModal #deleteButton').attr('href', '/delete/' + productId);
+    });
+  });
+</script>
+
+
 </body>
 </html>
+

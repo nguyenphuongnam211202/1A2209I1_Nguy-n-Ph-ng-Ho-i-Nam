@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <h1 class="mt-4" style="text-align: center">Create New Product</h1>
+    <form th:action="@{/create}" method="post" th:object="${product}">
+        <div class="form-group">
+            <label >Name:</label>
+            <input type="text"  th:field="*{name}" class="form-control"  required>
+            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+        </div>
+
+        <div class="form-group">
+            <label >Quantity:</label>
+            <input type="text" th:field="*{quantity}" class="form-control" required>
+            <span th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}"></span>
+        </div>
+
+        <div class="form-group">
+            <label >Date Release:</label>
+            <input type="date"  th:field="*{dateRelease}" placeholder="yyyy-MM-dd" class="form-control" required>
+            <span th:if="${#fields.hasErrors('dateRelease')}" th:errors="*{dateRelease}"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label >Price:</label>
+            <input type="text" th:field="*{price}" class="form-control" required>
+            <span th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span>
+        </div>
+
+        <div class="form-group">
+            <label >Category:</label>
+            <select class="form-control" th:field="*{category.categoryId}" required>
+                <option th:each="c: ${categories}" th:value="${c.categoryId}"
+                        th:text="${c.categoryName}"></option>
+            </select>
+        </div>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a class="btn btn-success" href="/list">Back to Home page</a>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

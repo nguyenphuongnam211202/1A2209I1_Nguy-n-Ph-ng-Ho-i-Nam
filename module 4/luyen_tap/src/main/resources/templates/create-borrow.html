@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Borrow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <h1 class="mt-4" style="text-align: center">Create New Borrow</h1>
+    <form th:action="@{/borrow/create}" method="post" th:object="${borrow}">
+        <div class="form-group">
+            <label >Ngay muon</label>
+            <input type="date"  th:field="*{borrowDate}" placeholder="yyyy-MM-dd" class="form-control" required>
+            <span th:if="${#fields.hasErrors('borrowDate')}" th:errors="*{borrowDate}"></span>
+
+        </div>
+
+        <input type="hidden" th:field="*{statusBorrow}" class="form-control" >
+
+
+        <div class="form-group">
+            <label >Book</label>
+            <select class="form-control" th:field="*{book.idBook}" required>
+                <option th:each="b: ${books}" th:value="${b.idBook}"
+                        th:text="${b.nameBook}"></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label >Person</label>
+            <select class="form-control" th:field="*{person.idPerson}" required>
+                <option th:each="p: ${people}" th:value="${p.idPerson}"
+                        th:text="${p.namePerson}"></option>
+            </select>
+        </div>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a class="btn btn-success" href="/borrow/list">Back to Home page</a>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

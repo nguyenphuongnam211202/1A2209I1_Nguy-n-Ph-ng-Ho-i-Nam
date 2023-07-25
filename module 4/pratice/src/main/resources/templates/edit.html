@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Update product</title>
 </head>
 <body>
-$END$
+<h1>Edit product</h1>
+<form th:action="@{/edit}" method="post" th:object="${benhAn}">
+    <table>
+        <tr>
+            <td>Ma benh an</td>
+            <td><input type="text" th:field="*{id}" readonly/></td>
+        </tr>
+        <tr>
+            <td>Ma benh nhan</td>
+            <td><input type="text" th:field="*{benhNhan.id}" readonly/></td>
+        </tr>
+        <tr>
+            <td>Ten benh nhan</td>
+            <td><input type="text" th:field="*{benhNhan.tenBenhNhan}"/>
+                <span th:if="${#fields.hasErrors('benhNhan.tenBenhNhan')}" th:errors="*{benhNhan.tenBenhNhan}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Dia chi</td>
+            <td><input type="text" th:field="*{benhNhan.tenDiaChi}"/>
+                <span th:if="${#fields.hasErrors('benhNhan.tenDiaChi')}" th:errors="*{benhNhan.tenBenhNhan}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Ngay nhap vien</td>
+            <td><input type="text" th:field="*{ngayNhapVien}" placeholder="dd/MM/yyyy"/>
+                <span th:if="${#fields.hasErrors('ngayNhapVien')}" th:errors="*{ngayNhapVien}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Ngay ra vien</td>
+            <td><input type="text" th:field="*{ngayRaVien}" placeholder="dd/MM/yyyy"/>
+                <span th:if="${#fields.hasErrors('ngayRaVien')}" th:errors="*{ngayRaVien}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Ly do</td>
+            <td><input type="text" th:field="*{tenBenh}"/>
+                <span th:if="${#fields.hasErrors('tenBenh')}" th:errors="*{tenBenh}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Reset"></td>
+            <td><input type="submit" value="Update"></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

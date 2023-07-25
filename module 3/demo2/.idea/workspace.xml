@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea698d45-6d16-4aae-b99d-de22a3b63032" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/controller/BenhVienController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/model/BenhAn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/model/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/repository/IBenhAnRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/repository/IBenhNhanReposity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/service/IBenhAnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/service/IBenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/service/Impl/BenhAnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/java/com/codegym/pratice/service/Impl/BenhNhanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 4/pratice/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JG3.Electronic" beforeDir="false" afterPath="$PROJECT_DIR$/../JG3.Electronic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module 4/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/database/book_management.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/dto/BorrowingDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/dto/CustomUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/AppRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/AppUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/Borrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/entities/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/generator/GeneratorBorrowId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/generator/GeneratorId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/repos/IAppRoleRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/repos/IAppUserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/repos/IBookRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/repos/IBorrowRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/repos/IStudentRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/IBookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/IBorrowService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/IStudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/impl/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/impl/BorrowService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/service/impl/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/validator/ReturnDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/java/com/example/demo/validator/ReturnDateValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/resources/templates/views/borrowing_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/resources/templates/views/create_borrowing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/resources/templates/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/main/resources/templates/views/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module 4/demo3/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2STV674EiIEBZCmJYRaZfE6iAUT" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/A0922I1_Nguy-n-Ph-ng-Ho-i-Nam/module 3/demo3",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea698d45-6d16-4aae-b99d-de22a3b63032" name="Changes" comment="" />
+      <created>1689170379921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689170379921</updated>
+      <workItem from="1689170380937" duration="62000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
