@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- header-inf -->
+<section>
+    <div class="header-heading">
+        <div class="container">
+            <div class="row d-flex ">
+                <div class="col-auto col-4 ">
+                    <i class="bi bi-sun"></i>
+                    <span> Thời tiết: 32 °C / 89 °F </span>
+                </div>
+                <div class="col-auto col-4 text-center ">
+                    <i class="bi bi-alarm"></i>
+                    <span id="hourLocal">Giờ địa phương</span>
+                </div>
+                <div class="col-auto col-4 text-end  ">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Admin account</span>
+                    <span id="list">
+                            <i class="bi bi-list"></i>
+                        </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row header-content">
+            <div class="col-auto col-3">
+                <a href="index.html"> <img src="./img/logo1.png" alt="" class="logo1">
+                </a>
+            </div>
+            <div class="col-auto col-3">
+                <div class="logo2-wrap">
+                    <div class="logo2-wrap-content">
+                        <div>
+                            <img src="./img/logo2.1.png" alt="" class="logo2-1">
+                        </div>
+                        <div>
+                            <img src="./img/logo2.2.png" alt="" class="logo2-2">
+                        </div>
+                        <div>2.777 Reviews</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-auto col-3">
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    103 - 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng, Việt Nam
+                </p>
+                <p> 7.0 km từ Sân bay Quốc tế Đà Nẵng </p>
+            </div>
+            <div class="col-auto col-3">
+                <div>
+                    <i class="bi bi-telephone"></i>
+                    <span>
+                            84-236-3847 333/888 </span>
+                </div>
+                <div>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:reservation@furamavietnam.com">
+                        reservation@furamavietnam.com </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner -->
+<section>
+    <div class="banner-wrap">
+        <div class="bannerhandle">
+            <img class="banner-img" src="./img/banner.png" alt="" style="width: 100%; height: 600px;">
+        </div>
+        <h2 class="banner-des">Furama resort</h2>
+    </div>
+
+</section>
+<!-- header-content -->
+<section>
+    <div class="header-nav">
+        <div class="container">
+            <ul class="nav d-flex justify-content-between ">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Khách hàng</a>
+                    <ul class="nav-item-sup">
+                        <li><a href="add_customer.html">Thêm mới khách hàng</a></li>
+                        <li><a href="list_customer.html">Danh sách khách hàng</a></li>
+                        <li><a href="list_customer_use_service.html">Danh sách khách hàng sử dụng dịch vụ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nhân viên</a>
+                    <ul class="nav-item-sup">
+                        <li><a href="add_employee.html">Thêm mới Nhân viên</a></li>
+                        <li><a href="list_employee.html">Danh sách Nhân viên</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dịch vụ</a>
+                    <ul class="nav-item-sup">
+                        <li><a href="add_service.html">Thêm mới Dịch vụ</a></li>
+                        <li><a href="list_service.html">Danh sách Dịch vụ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Hợp đồng</a>
+                    <ul class="nav-item-sup">
+                        <li><a href="add_contract.html">Thêm mới Hợp đồng</a></li>
+                        <li><a href="add_detail_contract.html">Thêm mới Hợp đồng chi tiết</a></li>
+                        <li><a href="list_contract.html">Danh sách Hợp đồng</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- content p2 -->
+<section>
+    <div class="container" id="content">
+        <form action="">
+            <div class="d-flex justify-content-center">
+                <h5 class="text-center content-header" class="text-center">Thêm mới nhân viên</h5 >
+
+            </div>
+            <div class="form-wrap">
+                <div class="form-wrap-content">
+                    <div class="form-group">
+                        <label><b>HỌ VÀ TÊN :</b></label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Nhập họ và tên nhân viên" required>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="form-group w-50">
+                            <label><b>NGÀY SINH :</b></label>
+                            <input type="date" name="date" id="date" style="text-align: center">
+                        </div>
+                        <div class="form-group w-50">
+                            <label><b>VỊ TRÍ :</b></label>
+                            <select name="position" id="position" class="text-center">
+                                <option value="0">--Chọn vị trí--</option>
+                                <option value="1">Lễ tân</option>
+                                <option value="2">Phục vụ</option>
+                                <option value="3">Chuyên viên</option>
+                                <option value="4">Giám sát</option>
+                                <option value="5">Quản lý</option>
+                                <option value="6">Giá đốc</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex ">
+                        <div class="form-group w-50">
+                            <label><b>TRÌNH ĐỘ :</b></label>
+                            <select name="level" id="level" class="text-center">
+                                <optimon value="0">--Chọn trình độ--</optimon>
+                                <option value="1">Trung cấp</option>
+                                <option value="2">Cao đẳng</option>
+                                <option value="3">Đại học </option>
+                                <option value="4">Sau đại học</option>
+                            </select>
+                        </div>
+                        <div class="form-group w-50">
+                            <label><b>BỘ PHẬN:</b></label>
+                            <select name="parts" id="parts" class="text-center">
+                                <option value="0">--Chọn bộ phận--</option>
+                                <option value="1">Sale – Marketing</option>
+                                <option value="2">Hành Chính</option>
+                                <option value="3">Phục vụ</option>
+                                <option value="4">Quản lý</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><b>SỐ CCCD :</b></label>
+                        <input type="text" name="cccd" id="cccd"  placeholder="Nhập số CCCD" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>SDT :</b></label>
+                        <input type="tel" name="sdt" id="sdt"  placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>EMAIL :</b></label>
+                        <input type="email" name="email" id="email"  placeholder="Nhập địa chỉ email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>ĐỊA CHỈ :</b></label>
+                        <input type="text" name="address" id="address"  placeholder="Nhập địa chỉ " required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>LƯƠNG :</b></label>
+                        <input type="text" name="address" id="salary"  placeholder="Nhập lương " required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="reset" class="btn btn-danger">RESET</button>
+                        <button class="btn btn-success">CREATE</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+<!-- footer -->
+<section>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto col-2">
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href=""></a>Giá công bố</li>
+                        <li class="footer-item"><a href=""></a>Lifestyle Blog</li>
+                        <li class="footer-item"><a href=""></a>Tuyển dụng</li>
+                        <li class="footer-item"><a href=""></a>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="col-auto col-5">
+                    <img src="./img/footer1.png
+                        " alt="" style='width: 100%;'>
+                </div>
+                <div class="col-auto col-5 footer-contact">
+                    <ul class="footer-contact-list">
+                        <li class="footer-item-contact"><a href=""></a>103 - 105 Vo Nguyen Giap Street, Khue My
+                            Ward, Ngu Hanh Son District, Danang City, Vietnam
+                        </li>
+                        <li class="footer-item-contact"><a href=""></a>Tel.: 84-236-3847 333/888 * Fax: 84-236-3847
+                            666
+                        </li>
+                        <li class="footer-item-contact"><a href=""></a>Email: reservation@furamavietnam.com *
+                            www.furamavietnam.com
+                        </li>
+                        <li class="footer-item-contact"><a href=""></a>GDS Codes: Amadeus-GD DADFUR,
+                            Galileo/Apollo-GD 16236, Sabre-GD 032771, Worldspan- GD DADFU
+                        </li>
+                        <li class="footer-item-contact"><a href=""></a>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-camera"></i>
+                            <i class="bi bi-facebook"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./code.js"></script>
+</body>
+
+</html>
