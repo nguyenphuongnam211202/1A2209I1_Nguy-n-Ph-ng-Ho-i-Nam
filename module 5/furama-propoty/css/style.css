@@ -180,7 +180,8 @@ select {
 }
 
 .btn-danger,
-.btn-success {
+.btn-success,
+.btn-warning{
     border-radius: 20px !important;
 }
 
