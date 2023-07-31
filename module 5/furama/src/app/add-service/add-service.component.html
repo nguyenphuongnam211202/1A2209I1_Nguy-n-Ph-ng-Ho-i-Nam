@@ -1,0 +1,57 @@
+<div class="container" id="content">
+  <form action="">
+    <div class="d-flex justify-content-center">
+      <h5 class="text-center content-header" class="text-center">Thêm mới dịch vụ</h5 >
+
+    </div>
+    <div class="form-wrap">
+      <div class="form-wrap-content">
+        <div class="form-group">
+          <label><b>TÊN DỊCH VỤ :</b></label>
+          <input type="text" name="fullname" id="fullname" placeholder="Nhập tên dịch vụ" required>
+        </div>
+        <div class="d-flex ">
+          <div class="form-group w-50">
+            <label><b>DIỆN TÍCH :</b></label>
+            <input type="text" name="area" id="area" style="text-align: center">
+          </div>
+          <div class="form-group w-50">
+            <label><b>KIỂU THUÊ :</b></label>
+            <select name="rent" id="rent" class="text-center">
+              <option value="0">--Chọn kiểu thuê--</option>
+              <option value="1">Năm</option>
+              <option value="2">Tháng</option>
+              <option value="3">Ngày</option>
+              <option value="4">Giờ</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label><b>SỐ TẦNG :</b></label>
+          <input type="text" name="floors" id="floors"  placeholder="Nhập số tầng" required>
+        </div>
+        <div class="form-group">
+          <label><b>SỐ NGƯỜI TỐI ĐA :</b></label>
+          <input type="text" name="sl" id="sl"  placeholder="Nhập số người tối đa" required>
+        </div>
+        <div class="form-group">
+          <label><b>CHI PHÍ THUÊ :</b></label>
+          <input type="text" name="cost" id="cost"  placeholder="Nhập chi phí thuê" required>
+        </div>
+        <div class="form-group">
+          <label><b>TRẠNG THÁI :</b></label>
+          <select name="status" id="status" class="text-center">
+            <option value="0">--Chọn trạng --</option>
+            <option value="1">còn</option>
+            <option value="2">hết</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="reset" class="btn btn-danger">RESET</button>
+          <button class="btn btn-success">CREATE</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>
