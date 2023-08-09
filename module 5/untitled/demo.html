@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="radio" name="gioiTinh" id="nam"><p>nam</p>
+<input type="radio" name="gioiTinh" id="nu"> <p>nu</p>
+<input type="radio" name="gioiTinh" id="lgbt"> <p>LGBT</p>
+
+<input type="radio" id="check" onclick="test()">
+
+<script>
+    function test() {
+        const checkbox = document.getElementById("check");
+        const namRadio = document.getElementById("nam");
+
+        if (checkbox.checked) {
+            namRadio.checked = true;
+        }
+    }
+</script>
+</body>
+</html>

@@ -13,8 +13,8 @@
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-&.active {
-   background: deeppink;
  }
+.rating-unit .active {
+  background: deeppink;
 }
 

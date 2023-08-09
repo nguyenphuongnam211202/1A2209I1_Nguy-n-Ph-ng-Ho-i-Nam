@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { HeaderFooterNavComponent } from './header-footer-nav/header-footer-nav.component';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { EditServiceComponent } from './edit-service/edit-service.component';
@@ -16,7 +15,6 @@ import { ListContractComponent } from './list-contract/list-contract.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     HeaderFooterNavComponent,
     ListServiceComponent,
     EditServiceComponent,

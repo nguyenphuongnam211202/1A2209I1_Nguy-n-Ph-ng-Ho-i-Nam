@@ -1,0 +1,89 @@
+<h2 style="text-align: center">Form - Register</h2>
+<div class="col-6">
+  <form class="row g-3" [formGroup]="registerForm" (ngSubmit)="create()">
+    <div class="col-12">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" formControlName="email" >
+    </div>
+    <div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.email.dirty&&registerForm.controls.email.errors?.email">Email không hợp lệ</p>
+      </div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.email.dirty&&registerForm.controls.email.errors?.required">Email không được để trống</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword" formControlName="password">
+    </div>
+    <div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.password.dirty&&registerForm.controls.password.errors?.minlength">Có ít nhất 6 ký tự</p>
+      </div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.password.dirty&&registerForm.controls.password.errors?.required">Password không được để trống</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputConfirmPassword" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control" id="inputConfirmPassword" formControlName="confirmPassword">
+    </div>
+    <div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.confirmPassword.dirty&&registerForm.controls.confirmPassword.errors?.minlength">Có ít nhất 6 ký tự</p>
+      </div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.confirmPassword.dirty&&registerForm.controls.confirmPassword.errors?.required">Confirm Password không được để trống</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputCountry" class="form-label">Country</label>
+      <select class="form-control" id="inputCountry"  formControlName="country">
+        <option>Viet Nam</option>
+        <option>Italy</option>
+        <option>China</option>
+        <option>USA</option>
+        <option>Campuchia</option>
+      </select>
+    </div>
+    <div class="text-danger" *ngIf="registerForm.controls.country.errors?.required">Không được phép để trống
+    </div>
+    <div class="col-12">
+      <label for="inputAge" class="form-label">Age</label>
+      <input type="number" class="form-control" id="inputAge" formControlName="age">
+    </div>
+    <div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.age.dirty&&registerForm.controls.age.errors?.min">Tuổi phải lớn hơn 18 tuổi</p>
+      </div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.age.dirty&&registerForm.controls.age.errors?.required">Age không được để trống</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputPhoneNumber" class="form-label">PhoneNumber</label>
+      <input type="text" class="form-control" id="inputPhoneNumber" formControlName="phoneNumber">
+    </div>
+    <div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.phoneNumber.dirty&&registerForm.controls.phoneNumber.errors?.pattern">>SDT bắt đầu từ +84 và phía sau phải có 9 số</p>
+      </div>
+      <div>
+        <p style="color: red" *ngIf="registerForm.controls.phoneNumber.dirty&&registerForm.controls.phoneNumber.errors?.required">SDT không được để trống</p>
+      </div>
+    </div>
+    <div>
+      <label class="form-label">Gender</label>
+      <div class="col-12">
+        <input type="radio" value="Male" name="gender" formControlName="gender" checked>Male
+        <input type="radio" value="Female" name="gender" formControlName="gender">Female
+      </div>
+      <div class="text-danger" *ngIf="registerForm.controls.gender.errors?.required">Please Choose!!
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
