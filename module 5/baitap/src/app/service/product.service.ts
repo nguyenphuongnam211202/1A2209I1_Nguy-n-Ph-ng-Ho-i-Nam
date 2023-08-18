@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import {Product} from "../model/product";
+import {Product} from '../model/product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-
   products: Product[] = [{
     id: 1,
     name: 'IPhone 12',
@@ -55,4 +54,5 @@ export class ProductService {
       return product.id !== id;
     });
   }
-  constructor() { }}
+  constructor() { }
+}
