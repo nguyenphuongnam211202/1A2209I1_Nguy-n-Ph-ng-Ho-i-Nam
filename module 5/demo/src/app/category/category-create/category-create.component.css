@@ -1,0 +1,19 @@
+/* category-create.component.css */
+
+.category-form {
+  margin-top: 20px;
+}
+
+.category-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.category-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

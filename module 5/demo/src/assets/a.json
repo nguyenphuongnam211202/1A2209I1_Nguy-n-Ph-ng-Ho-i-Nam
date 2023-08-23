@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "dfd",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "gr",
+      "price": 123,
+      "description": "bfbgz",
+      "category": {
+        "id": "1"
+      },
+      "id": 1
+    }
+  ]
+}
